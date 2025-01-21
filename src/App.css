@@ -41,7 +41,7 @@
   color: #888;
 } */
 
-.container {
+/* .container {
   text-align: center;
 }
 
@@ -71,4 +71,283 @@ button {
 
 .button2 {
   background-color: #FF4C4C;
+} */
+
+/* 
+:root {
+  --font-color: #fff;
+  --primary-color: #78b2b6;
+  --background-color: #e8f0f7;
+  --secondary-color: #333;
+  --max-width: 1100px;
+  --heading-font: "Sour Gummy", sans-serif;
+  --border: 12px;
+}
+
+header, footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: var(--background-color);
+  color: var(--secondary-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main{
+  margin-bottom: 5rem;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.box1 {
+  width: 90%;
+  max-width: 900px;
+  height: 400px;
+  text-align: center;
+  padding-top: 7rem;
+  border-radius: 18px;
+  border: 1px solid black;
+  font-family: var(--heading-font);
+  background-image: url(/bg_image.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+  .box1 {
+      height: auto;
+      padding: 3rem 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .box1 {
+      height: auto;
+      padding: 2rem 1rem;
+  }
+
+  h1 {
+      font-size: 1.8rem;
+  }
+
+  p {
+      font-size: 1rem;
+  }
+}
+
+.button{
+  color: #78B9CD;
+  border: 1px solid #64979B;
+  height: 42px;
+  width: 140px;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.button:hover{
+  color: white;
+  background-color: black;
+}
+
+.text{
+  font-family: var(--heading-font);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 47px;
+  font-weight: bold;
+}
+
+section{
+  margin-bottom: 6rem;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+
+.card {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.button2{
+  background-color: #fff;
+  border: 1px solid;
+  height: 42px;
+  width: 140px;
+  border-radius: 8px;
+  font-size: 17px;
+}
+
+.button2:hover{
+  color: white;
+  background-color: black;
+}
+
+.about-section {
+  background-color: #6cb2b6;
+  border-radius: 15px;
+  padding: 60px;
+  margin: 50px auto;
+  max-width: 1100px;
+}
+.about-image img {
+  border-radius: 10px;
+}
+.about-content h5 {
+  font-size: 58px;
+  font-weight: bold;
+  font-family: var(--heading-font);
+  color: black;
+  margin-bottom: 8px;
+}
+.about-content p {
+  color: black;
+  font-size: 1rem;
+}
+.btn-read-more {
+  color: black;
+  background-color: #6CB2B6;
+  border: none;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-read-more:hover {
+  color: white;
+  background-color: black;
+}
+
+.container{
+  margin-bottom: 5rem;
+}
+
+.endbox{
+  width: 200px;
+  height: 200px;
+  background-color: #6CB2B6;
+  text-align: center;
+}
+
+.container4 {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.textend {
+  font-size: 3.6em;
+  margin-bottom: 15px;
+  font-family: var(--heading-font);
+  font-weight: bold;
+}
+.sentence {
+  font-size: 1.1em;
+  margin: 15px 0;
+  color: #555;
+}
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.contact-section h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.contact-section p {
+  margin: 5px 0;
+  color: #333;
+}
+.contact-section a {
+  color: #5a9da8;
+  text-decoration: none;
+  font-weight: bold;
+}
+.social-icons a {
+  margin: 0 10px;
+  font-size: 1.5em;
+  color: #333;
+  text-decoration: none;
+}
+
+#registerModal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+#registerModal .modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+}
+
+#registerModal .close {
+  float: right;
+  font-size: 1.5rem;
+  cursor: pointer;
+} */
+.box {
+  width: 200px;
+  height: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
 }
